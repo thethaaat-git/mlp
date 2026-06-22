@@ -1,0 +1,35 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+name = "thethaaat"
+version = "0.1.0"
+description = "Библиотека предлагает разные удобные программы для разных вещей, есть и готовые программы. Подробнее обо всём в README.md"
+readme = "README.md"
+authors = [
+    {name = "thethaaat", email = "thethaaat@inbox.ru"}
+]
+license = {text = "Apache-2.0"}
+requires-python = ">=3.8,<4.0"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+]
+
+[project.urls]
+Homepage = "https://github.com/thethaaat-git/MLP"
+Repository = "https://github.com/thethaaat-git/MLP.git"
+Issues = "https://github.com/thethaaat-git/MLP/issues"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+black = "^24.0.0"
+ruff = "^0.4.0"
